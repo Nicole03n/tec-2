@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natanael Cano</title>
+    <title>Adopción de Gatos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,6 +19,14 @@
         section {
             margin-top: 20px;
         }
+        .gato {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
         footer {
             margin-top: 20px;
             padding: 10px;
@@ -31,36 +39,37 @@
 <body>
 
     <header>
-        <h1>Natanael Cano</h1>
-        <p>Cantante y Compositor</p>
+        <h1>¡Adopta un Gato!</h1>
+        <p>Encuentra a tu nuevo compañero felino</p>
     </header>
 
     <section>
-        <h2>Biografía</h2>
-        <p>Coloca aquí la biografía de Natanael Cano.</p>
-    </section>
+        <div class="gato">
+            <img src="gato1.jpg" alt="Gato 1">
+            <h2>Gato Gris</h2>
+            <p>Edad: 2 años</p>
+            <p>Descripción: Gato juguetón y cariñoso. Está esterilizado y vacunado.</p>
+            <button onclick="adoptar('Gato Gris')">Adoptar</button>
+        </div>
 
-    <section>
-        <h2>Discografía</h2>
-        <ul>
-            <li>Álbum 1</li>
-            <li>Álbum 2</li>
-            <li>Sencillos</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Conciertos Recientes</h2>
-        <ul>
-            <li>Concierto 1 - Fecha</li>
-            <li>Concierto 2 - Fecha</li>
-            <li>Concierto 3 - Fecha</li>
-        </ul>
+        <div class="gato">
+            <img src="gato2.jpg" alt="Gato 2">
+            <h2>Gato Rayado</h2>
+            <p>Edad: 1 año</p>
+            <p>Descripción: Gato curioso y amigable. Necesita un hogar amoroso.</p>
+            <button onclick="adoptar('Gato Rayado')">Adoptar</button>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Natanael Cano. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Adopta un Gato. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        function adoptar(nombreGato) {
+            alert("¡Felicidades! Has adoptado a " + nombreGato + ". ¡Bienvenido a tu nuevo hogar, pequeño amigo!");
+        }
+    </script>
 
 </body>
 </html>
